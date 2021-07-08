@@ -1,0 +1,14 @@
+# For netlify users you can use this headers text file to optimize the site
+# For example cache control headers
+# There is documentation availbale at netlify docs about CUSTOM HEADERS here's a link https://docs.netlify.com/routing/headers/
+
+# I will do an example for you
+
+/*
+  cache-control: max-age=0
+  cache-control: no-cache
+  cache-control: no-store
+  cache-control: must-revalidate
+
+# The abover is an example taken from netlify docs, please read through the documentation as it's quite simple
+# Good luck!

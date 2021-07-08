@@ -1,0 +1,468 @@
+/*<========= TABLE OF CONTENTS ============>
+1. Typograhpy
+2. Insertion of google font "Poppins" >> line 20
+3. Header >> line 70
+4. Glass panel >> line 78
+5. Header Responsive (tablet devices) >> line 182
+6. About >> line 250
+7. Service >> line 274
+8. Footer >> line 391
+
+IMPORTANT This small template is not responsive however you can follow along the media query to solve that, bootstrap has already been added
+*/
+
+
+/* ==================<<< visit my website https://codewithkevan.com >>>=======================*/
+
+
+/*-------------------------------------------------------------<< STYLING START >>---------------------------------------------------------------*/
+
+
+/*---------------------------
+ TYPOGRAPGY START
+ -------------------------- */
+
+
+/* GOOGLE FONT POPPINS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/*-------------------------------------
+ TYPOGRAPHY END
+ ------------------------------------ */
+
+
+/*-------------------------------------
+HEADER START
+---------------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(images/skyline.jpg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+/* GLASS PANEL */
+
+.glass-panel {
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    border-radius: 15px;
+    padding: 130px 32px 180px 32px;
+    /* fix padding to suit header of the website */
+    backdrop-filter: blur(10px);
+}
+
+.glass-button {
+    display: inline-block;
+    padding: 16px 24px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.glass-panel {
+    max-width: 600px;
+}
+
+.glass-button {
+    margin: 15px;
+    margin-top: 40px;
+}
+
+
+/* GLASS PANEL END */
+
+
+/*-----------------------------------------------
+ HEADER FORM START
+ -----------------------------------------------*/
+
+.online-form {
+    position: relative;
+    padding-top: 15px;
+    margin-left: 35px;
+    /* margin left to center input area*/
+}
+
+.online-form .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    /* insert blur range within the brackets */
+    color: rgba(255, 255, 255);
+    /* adjust color to suit theme of website */
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 15px;
+    box-shadow: none;
+    /* allow no box shadow at stationary point */
+    height: 50px;
+    margin-right: 1.9em;
+    /* margin right to fit button within input area */
+    padding-left: 15px;
+}
+
+.online-form input[type="email"] {
+    width: 75% !important;
+    /* the total width input area is allowed */
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.online-form button {
+    position: absolute;
+    right: 3em;
+    width: 25% !important;
+    /* the remaining width to fit button */
+}
+
+.online-form button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 5px 19px 43px rgba(255, 255, 255, 0.3);
+    /* box shadow allowed ON HOVER to impact user experience */
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------------
+ HEADER FORM END 
+ --------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+ HEADER RESPONSIVE
+ --------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+    .glass-panel {
+        margin: 40px auto;
+        background-color: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        border-radius: 15px;
+        /* border radius can change to suit tablet screen */
+        padding: 60px;
+        backdrop-filter: blur(10px);
+    }
+    .online-form {
+        position: relative;
+        padding-top: 15px;
+        margin-left: 0px;
+    }
+    .online-form .form-control {
+        background-color: rgba(255, 255, 255, 0.1);
+        /* background of the filter  */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(30px);
+        /* within the brackets insert range of the filter */
+        color: rgba(255, 255, 255);
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 15px;
+        box-shadow: none;
+        height: 50px;
+        margin-right: 2.2em;
+        /* margin right to fit button within input area */
+        padding-left: 15px;
+    }
+}
+
+
+/*-----------------------------------------------------
+HEADER RESPONSIVE COMPLETE (NO MOBILE RESPONSE)
+------------------------------------------------------*/
+
+h3,
+h3 {
+    /* first text displayed onto screen */
+    /* inherits from our global attributes that is (h3=1.75rem) line 17 */
+    min-height: 120px;
+    width: 90%;
+    max-width: 700px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#top-text {
+    /* p tag beneath our h3 header */
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    color: rgba(255, 255, 255, 0.6);
+    /* change color to suit website theme */
+}
+
+
+/*--------------------------------
+ ABOUT SECTION 
+ -------------------------------*/
+
+#about {
+    padding: 30vh;
+    background-color: #e7e7e7;
+    /* change background-color to suit main theme */
+}
+
+.tour-image img {
+    width: 100%;
+    /* inherited from bootstrap (index.html -line 42) aligns our image left at 100% */
+}
+
+.about-info {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 19px 43px rgba(51, 51, 51, 0.3);
+}
+
+
+/*------------------------------------------------------
+ SERVICE SECTION 
+-------------------------------------------------------*/
+
+#service {
+    background: url(images/beach.jpg) no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 20vh;
+}
+
+.card {
+    height: 400px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-img {
+    height: 120px;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 100%;
+    position: absolute;
+    margin: 30px auto 20px auto;
+    left: 0;
+    right: 0;
+}
+
+.card-img img {
+    margin-left: 1%;
+    margin-top: 16%;
+}
+
+.desc {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 160px;
+}
+
+.primary-text {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    margin: 5px 0;
+}
+
+.secondary-text {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+#btn {
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: none;
+}
+
+#btn {
+    width: 80%;
+    padding: 15px 0;
+    position: absolute;
+    left: 10%;
+    top: 240px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.details {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 70px;
+    padding: 20px 0;
+    left: 0px;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 8px 8px;
+}
+
+.details>div {
+    text-align: center;
+}
+
+.details>div:first-child {
+    border-right: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/*---------------------------------------------------------
+ SERVICE CARD END 
+---------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+ FOOTER START
+-------------------------------------------------------- */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background: linear-gradient(322deg, #ba4aff, rgba(186, 74, 255, 0) 70%), linear-gradient(178deg, #008aff, rgba(0, 138, 255, 0) 70%), linear-gradient(24deg, #00ffc6, rgba(0, 255, 198, 0) 35%);
+}
+
+.ruler {
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    left: 0%;
+    right: 0%;
+}
+
+.containers {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+}
+
+.containers .icon {
+    --size: 14rem;
+    --transition-duration: 500ms;
+    --transition-easing: ease-out;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--foreground-color);
+    font-size: 5rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 1.5rem;
+    box-shadow: 0px calc(var(--size) / 6) calc(var(--size) / 3) rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-duration) var(--transition-easing);
+    overflow: hidden;
+}
+
+.containers .icon::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.4);
+    width: 60%;
+    height: 100%;
+    top: 0%;
+    left: -125%;
+    transform: skew(45deg);
+    position: absolute;
+    transition: left var(--transition-duration) var(--transition-easing);
+}
+
+.containers .icon:hover {
+    transform: translateY(-25%);
+}
+
+.containers .icon:hover::before {
+    left: 150%;
+}
+
+
+/*-------------------------------
+FOOTER END
+--------------------------------*/
+
+
+/*---------------------------------------------------------------<< STYLING END >>-----------------------------------------------------------*/
